@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS 3D Chess Board Model with Pieces ♟️</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<DIV class="uniform">
+<DIV class="object3d chess-defaults">
+<!-- The Stage -->
+<div class="reusable-rect main-stage">
+	<div class="sides side1"></div>
+	<div class="sides side2"></div>
+
+	<!-- Elements over Stage -->
+	<div class="main-elements">
+		<DIV class="board">
+	<!-- White -->
+	<!-- (--v: -3 == piece taken) -->
+	<div class="piece QUEEN" style="--v:7;--h:4;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="piece-head">
+		<div class="reusable-trapezoid">
+			<div class="trapesides trapeside1"></div>
+			<div class="trapesides trapeside2"></div>
+			<div class="trapesides trapeside3"></div>
+			<div class="trapesides trapeside4"></div>
+			<div class="trapesides trapeside5"></div>
+		</div>
+		</div>
+		<div class="reusable-rect piece-diamond"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-hood"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+	</div>
+	<div class="piece KING" style="--v:7;--h:3;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="piece-head">
+		<div class="reusable-trapezoid">
+			<div class="trapesides trapeside1"></div>
+			<div class="trapesides trapeside2"></div>
+			<div class="trapesides trapeside3"></div>
+			<div class="trapesides trapeside4"></div>
+			<div class="trapesides trapeside5"></div>
+		</div>
+		</div>
+		<div class="reusable-rect piece-diamond"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-hood"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BISHOP" style="--v:7;--h:2;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="piece-crown">
+			<div class="ccside ccside1"></div>
+			<div class="ccside ccside2"></div>
+			<div class="ccside ccside3"></div>
+			<div class="ccside ccside4"></div>
+		</div>
+	</div>
+	<div class="piece BISHOP" style="--v:7;--h:5;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="piece-crown">
+			<div class="ccside ccside1"></div>
+			<div class="ccside ccside2"></div>
+			<div class="ccside ccside3"></div>
+			<div class="ccside ccside4"></div>
+		</div>
+	</div>
+	<div class="piece HORSE" style="--v:7;--h:1;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt1"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt2"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt3"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece HORSE" style="--v:7;--h:6;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt1"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt2"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt3"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece ROOK" style="--v:7;--h:0;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+			<div class="reusable-rect piece-head-left"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+			<div class="reusable-rect piece-head-right"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		</div>
+		<div class="reusable-rect piece-head-center"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece ROOK" style="--v:7;--h:7;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+			<div class="reusable-rect piece-head-left"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+			<div class="reusable-rect piece-head-right"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		</div>
+		<div class="reusable-rect piece-head-center"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:0;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:1;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:2;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:3;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:4;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:5;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:6;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece PAWN" style="--v:6;--h:7;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<!-- Black -->
+	<div class="piece BLACK QUEEN" style="--v:0;--h:4;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="piece-head">
+		<div class="reusable-trapezoid">
+			<div class="trapesides trapeside1"></div>
+			<div class="trapesides trapeside2"></div>
+			<div class="trapesides trapeside3"></div>
+			<div class="trapesides trapeside4"></div>
+			<div class="trapesides trapeside5"></div>
+		</div>
+		</div>
+		<div class="reusable-rect piece-diamond"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-hood"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK KING" style="--v:0;--h:3;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="piece-head">
+		<div class="reusable-trapezoid">
+			<div class="trapesides trapeside1"></div>
+			<div class="trapesides trapeside2"></div>
+			<div class="trapesides trapeside3"></div>
+			<div class="trapesides trapeside4"></div>
+			<div class="trapesides trapeside5"></div>
+		</div>
+		</div>
+		<div class="reusable-rect piece-diamond"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-hood"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK BISHOP" style="--v:0;--h:2;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="piece-crown">
+			<div class="ccside ccside1"></div>
+			<div class="ccside ccside2"></div>
+			<div class="ccside ccside3"></div>
+			<div class="ccside ccside4"></div>
+		</div>
+	</div>
+	<div class="piece BLACK BISHOP" style="--v:0;--h:5;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="piece-crown">
+			<div class="ccside ccside1"></div>
+			<div class="ccside ccside2"></div>
+			<div class="ccside ccside3"></div>
+			<div class="ccside ccside4"></div>
+		</div>
+	</div>
+	<div class="piece BLACK HORSE" style="--v:0;--h:1;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt1"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt2"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt3"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK HORSE" style="--v:0;--h:6;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt1"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt2"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-tilt3"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK ROOK" style="--v:0;--h:0;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+			<div class="reusable-rect piece-head-left"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+			<div class="reusable-rect piece-head-right"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		</div>
+		<div class="reusable-rect piece-head-center"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK ROOK" style="--v:0;--h:7;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+			<div class="reusable-rect piece-head-left"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+			<div class="reusable-rect piece-head-right"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		</div>
+		<div class="reusable-rect piece-head-center"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:0;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:1;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:2;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:3;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:4;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:5;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:6;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+	<div class="piece BLACK PAWN" style="--v:1;--h:7;">
+		<div class="reusable-rect piece-base"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-upbase"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-thick"> <div class="sides side1"></div> <div class="sides side2"></div> </div>
+		<div class="reusable-rect piece-head"> <div class="sides side1"></div><div class="sides side2"></div> </div>
+	</div>
+		</DIV>
+		<DIV class="coordinates"></DIV>
+		<DIV class="coordinates_"></DIV>
+	</div>
+</div>
+</DIV>
+</DIV>
+
+<!-- Camera Controls for the actual 3D feeling -->
+<SPAN id="controls" class="hide">
+<span class="title">Rotation</span>
+<label>
+<span title="Horizontal Rotation ↔">X</span>
+<input type="range" id="y_axis" min="-180" max="180" value="0" onchange="apply(this, '--y', 'deg')" oninput="apply(this, '--y', 'deg')" step="0.1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Vertical Rotation ↕">Y</span>
+<input type="range" id="x_axis" min="-180" max="180" value="45" onchange="apply(this, '--x', 'deg')" oninput="apply(this, '--x', 'deg')" step="0.1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Rotation ↔ ↕">Z</span>
+<input type="range" id="z_axis" min="-180" max="180" value="-40" onchange="apply(this, '--z', 'deg')" oninput="apply(this, '--z', 'deg')" step="0.1"/>
+<span></span>
+</label>
+
+<span class="title">Transform</span>
+<label>
+<span title="Translate X">X</span>
+<input type="range" id="ty_axis" min="-2000" max="2000" value="0" onchange="apply(this, '--ty', 'px')" oninput="apply(this, '--ty', 'px')" step="1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Translate Y">Y</span>
+<input type="range" id="tz_axis" min="-2000" max="2000" value="215" onchange="apply(this, '--tz', 'px')" oninput="apply(this, '--tz', 'px')" step="1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Translate Z">Z</span>
+<input type="range" id="tx_axis" min="-2000" max="1000" value="0" onchange="apply(this, '--tx', 'px')" oninput="apply(this, '--tx', 'px')" step="1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Scale">S</span>
+<input type="range" id="scale" min="0.1" max="2" value="0.6" onchange="apply(this, '--s')" oninput="apply(this, '--s')" step="0.1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Perspective">P</span>
+<input type="range" id="perspective" min="1000" max="8000" value="3705" data-xval="5068" onchange="apply(this, '--p', 'px')" oninput="apply(this, '--p', 'px')" step="1"/>
+<span></span>
+</label>
+<br>
+<center>
+<button class="board-borders" onclick="document.documentElement.classList.toggle('noborders')">Borders</button>
+<button class="piece-highlighter" onclick="document.documentElement.classList.toggle('highlighted')">Highlight Pieces</button>
+<br>
+<button class="anim-boost" onclick="document.documentElement.classList.toggle('noanimations')">Animations</button>
+<button class="body-scroll" onclick="document.documentElement.classList.toggle('noscroll')">Scroll</button>
+<br>
+<button class="spin360" onclick="document.documentElement.classList.toggle('rotating');document.querySelector('.object3d').classList.toggle('rotate')">Spin 360°</button>
+<button class="ehide" onclick="controls.classList.toggle('hide')">Controls</button>
+</center>
+</SPAN>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

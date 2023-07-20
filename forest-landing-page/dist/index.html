@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chess-Home</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <head>
+      <title>Play Chess</title>
+    </head>
+    <body>
+      <header id="header">
+        <a href="../../portfolio-parallax-page/dist/index.html" class="logo"
+          >Play Chess</a
+        >
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="../../chess/dist/index.html">VS Player</a></li>
+          <li>
+            <a href="../../cheap-ai-chess/dist/index.html">VS Computer</a>
+          </li>
+          <li><a href="../../login-page-form/dist/index.html">Contact</a></li>
+        </ul>
+      </header>
+
+      <section>
+        <h2 id="text"><span>It's time for playing</span><br />Chess</h2>
+
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png"
+          id="bird1"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png"
+          id="bird2"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png"
+          id="forest"
+        />
+
+        <a href="https://www.fide.com/" id="btn">Official Site</a>
+
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png"
+          id="rocks"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png"
+          id="water"
+        />
+      </section>
+
+      <div class="sec">
+        <h2>3D Chess Game: A Modern Twist on a Classic</h2>
+        <p>
+          Welcome to the 3D Chess Game, a modern twist on the classic strategy
+          board game. Immerse yourself in a three-dimensional chessboard, adding
+          depth and excitement to your gameplay experience.
+        </p>
+        <p>
+          <strong>Rules:</strong>
+        </p>
+        <ul>
+          <li>Each player starts with 16 pieces, including:</li>
+          <li>1 King</li>
+          <li>1 Queen</li>
+          <li>2 Rooks</li>
+          <li>2 Knights</li>
+          <li>2 Bishops</li>
+          <li>8 Pawns</li>
+          <li>White always moves first.</li>
+          <li>Players take turns to move their pieces.</li>
+          <br />
+          <li>
+            Capture your opponent's pieces by moving your piece to their
+            position.
+          </li>
+          <br />
+          <li>
+            The game ends when a player's King is under immediate attack
+            (Check).
+          </li>
+          <li>
+            If a player's King is in Check and cannot move out of it or capture
+            the attacking piece, it's a Checkmate, and the game is over.
+          </li>
+          <li>
+            Pawns can promote to Queen, Rook, Bishop, or Knight upon reaching
+            the opposite end of the board.
+          </li>
+        </ul>
+        <br /><br />
+        <p>
+          Have fun playing this modern 3D version of chess and experience the
+          excitement of challenging your opponent in a new dimension!
+        </p>
+        <br /><br />
+        <h3>Fun Chess Facts</h3>
+        <br />
+        <ul>
+          <li>
+            Chess is one of the oldest known board games still played to this
+            day, with origins dating back to the 6th century in India.
+          </li>
+          <li>
+            The word "checkmate" comes from the Persian phrase "Shah Mat," which
+            means "the King is defeated" or "the King is dead."
+          </li>
+          <li>
+            Chess is recognized as a sport and is played competitively at local,
+            national, and international levels.
+          </li>
+          <li>
+            There are more possible moves in a game of chess than there are
+            atoms in the observable universe, making it an incredibly complex
+            game.
+          </li>
+          <li>
+            The longest chess game ever recorded had 269 moves and ended in a
+            draw.
+          </li>
+          <li>
+            Chess is known for its strategic depth, requiring players to think
+            multiple moves ahead and anticipate their opponent's strategies.
+          </li>
+        </ul>
+      </div>
+
+      <footer>
+        <a href="https://github.com/Punith-KK/Chess-Titans"
+          >Check it on My Github</a
+        >
+      </footer>
+
+      <script>
+        let text = document.getElementById("text");
+        let bird1 = document.getElementById("bird1");
+        let bird2 = document.getElementById("bird2");
+        let btn = document.getElementById("btn");
+        let rocks = document.getElementById("rocks");
+        let forest = document.getElementById("forest");
+        let water = document.getElementById("water");
+        let header = document.getElementById("header");
+
+        window.addEventListener("scroll", function () {
+          let value = window.scrollY;
+
+          text.style.top = 50 + value * -0.1 + "%";
+          bird2.style.top = value * -1.5 + "px";
+          bird2.style.left = value * 2 + "px";
+          bird1.style.top = value * -1.5 + "px";
+          bird1.style.left = value * -5 + "px";
+          btn.style.marginTop = value * 1.5 + "px";
+          rocks.style.top = value * -0.12 + "px";
+          forest.style.top = value * 0.25 + "px";
+          header.style.top = value * 0.5 + "px";
+        });
+      </script>
+    </body>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>
