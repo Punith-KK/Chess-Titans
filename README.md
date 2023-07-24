@@ -2,6 +2,8 @@
 
 [Live Site](https://punith-kk.github.io/Chess-Titans/forest-landing-page/dist/index.html)
 
+[UCI using StockFish-13](https://punith-kk.github.io/Chess-Titans/chess-titans-uci/)
+
 [My Project on Devpost](https://devpost.com/software/chess-titans)
 
 [Youtube Video Link](https://youtu.be/Vx-SCf2P-ro)
