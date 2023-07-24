@@ -1,0 +1,46 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "6.1.0"
+}
+
+apply plugin: 'java'
+apply plugin: 'signing'
+
+group = "net.andreinc"
+version = "0.4.7"
+archivesBaseName = "neatchess"
+
+sourceCompatibility = 17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            'org.hamcrest:hamcrest-library:2.2',
+            'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    )
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives javadocJar, sourcesJar
+}
+
+signing {
+    sign configurations.archives
+}
+
+test {
+    useJUnitPlatform()
+}
