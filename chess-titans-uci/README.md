@@ -11,6 +11,25 @@ Maven:
   <version>1.0</version>
 </dependency>
 ```
+## UCI Stockfish Integration 🎲
+
+In the latest update of Chess-Titans, we've introduced an exciting new feature - the UCI Stockfish Integration! With this addition, Chess-Titans now harnesses the powerful AI capabilities of the renowned Stockfish chess engine to offer an even more challenging and engaging gameplay experience.
+
+**What's New:**
+
+🔹 **Stockfish-powered AI Opponent:** The CPU opponent in the "VS CPU" mode has been upgraded to use Stockfish as its underlying engine. Stockfish is well-known for its exceptional strength and strategic prowess, making it a formidable adversary for players seeking a tough chess challenge.
+
+🔹 **Adjustable Difficulty Levels:** With the UCI Stockfish Integration, players can now fine-tune the AI opponent's difficulty level to match their skill and expertise. Whether you're a casual player looking for a fun match or a seasoned chess enthusiast seeking a real test of your abilities, Chess-Titans has the perfect difficulty setting for you.
+
+🔹 **Enhanced Game Logic:** The integration of Stockfish required us to rework and optimize various aspects of the game's logic. From evaluating positions to calculating possible moves, the chess engine has been fine-tuned to deliver an unparalleled playing experience.
+
+🔹 **Seamless UCI Protocol Communication:** The interaction between Chess-Titans and Stockfish is carried out flawlessly using the UCI (Universal Chess Interface) protocol. This ensures smooth communication, enabling the game to leverage Stockfish's immense computational power while maintaining compatibility with the Arena GUI and other UCI-compatible interfaces.
+
+**What's Next:**
+
+We're thrilled with the inclusion of the UCI Stockfish Integration, but our journey doesn't end here. We're committed to continuously enhancing Chess-Titans and delivering the best possible chess experience to our players. In the upcoming updates, we plan to introduce additional features like online multiplayer functionality, new visual themes, and advanced analytics to further enrich the game.
+
+Thank you for your continued support, and we hope you enjoy the enhanced chess gameplay experience with Chess-Titans! 🌟🏆🚀
 
 # Documentation 
 
