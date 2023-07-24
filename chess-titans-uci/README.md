@@ -6,8 +6,8 @@ Maven:
 
 ```xml
 <dependency>
-  <groupId>net.andreinc</groupId>
-  <artifactId>neatchess</artifactId>
+  <groupId>net.punith</groupId>
+  <artifactId>chess-titans</artifactId>
   <version>1.0</version>
 </dependency>
 ```
@@ -23,10 +23,10 @@ var uci = new UCI();
 uci.startStockfish();
 ```        
 
-Using `start(String cmd)` **neat-chess** can be tested with other chess engines:
+Using `start(String cmd)` **chess-titans** can be tested with other chess engines:
 
 ```java
-// leela chess 
+// chess-titans
 var uci = new UCI();
 uci.start("lc0");
 ```
@@ -160,7 +160,7 @@ After the position has been set on the board, to retrieve the best move:
 
 Let's take the example the following position:
 
-<img src="https://github.com/nomemory/neat-chess/blob/main/assets/position01.png" width="30%"/>
+<img width="40%" alt="position01" src="https://github.com/Punith-KK/Chess-Titans/assets/118302022/e674e557-9578-4e17-865e-b606d7fb0c3b">
 
 The corresponding FEN for the position is:
 
@@ -200,9 +200,10 @@ The methods for finding out what are the best lines are:
 
 Let's take for example the following position:
 
-<img src="https://github.com/nomemory/neat-chess/blob/main/assets/position02.png" width="30%"/>
+<img width="40%" alt="position02" src="https://github.com/Punith-KK/Chess-Titans/assets/118302022/f1746f3e-e2c8-4bcd-aa57-5d2c7012c32d">
 
 The corresponding FEN for the position is:
+
 
 ```
 r1bqkb1r/2pp1ppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQK2R w KQkq - 2 6
@@ -251,3 +252,6 @@ Best moves:
 	Move{lan='h2h3', strength=-0.63, pv=9, depth=18, continuation=[f6e4, e1g1, d7d5, b1c3, ...]}
 	Move{lan='f3g5', strength=-0.7, pv=10, depth=18, continuation=[d7d5, d2d3, c6d4, e4d5, ...]}
 ```
+
+![thank-you](https://github.com/Punith-KK/Chess-Titans/assets/118302022/5a7bb22e-3cc1-4bc6-abeb-80c91273bceb)
+
