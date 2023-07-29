@@ -7,6 +7,7 @@
 [My Project on Devpost](https://devpost.com/software/chess-titans)
 
 # UCI-Protocol Implementation
+## Check chess-titans-uci directory for programs implementation.
 
 A simple [UCI](https://en.wikipedia.org/wiki/Universal_Chess_Interface) (*Universal Chess Interface*) Client written in Java.
 
